@@ -9,19 +9,32 @@ This application integrates:
 - AMD Ryzen AI hardware acceleration
 """
 
-import cv2
 import sys
 import time
 import argparse
 from pathlib import Path
 
+# Check for required dependencies
+try:
+    import cv2
+except ImportError:
+    print("Error: OpenCV is not installed. Please install it with:")
+    print("  pip install opencv-python")
+    sys.exit(1)
+
 # Add src to path
 sys.path.insert(0, str(Path(__file__).parent / 'src'))
 
-from src.lip_detection import LipDetector
-from src.text_processing import TextProcessor
-from src.speech_synthesis import SpeechSynthesizer
-from src.utils import CameraCapture, ConfigLoader
+try:
+    from src.lip_detection import LipDetector
+    from src.text_processing import TextProcessor
+    from src.speech_synthesis import SpeechSynthesizer
+    from src.utils import CameraCapture, ConfigLoader
+except ImportError as e:
+    print(f"Error importing modules: {e}")
+    print("\nPlease ensure all dependencies are installed:")
+    print("  pip install -r requirements.txt")
+    sys.exit(1)
 
 
 class AssistiveCommunicationDevice:
