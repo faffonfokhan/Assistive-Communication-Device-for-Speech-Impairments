@@ -1,2 +1,56 @@
-# Assistive-Communication-Device-for-Speech-Impairments
-Using audio processing (OpenAI's whisper), and TTS technology, as well as hardware (AMD Ryzen AI), our project hopes to design and implement a device that’ll monitor real-time, audio based recognition of speech to allow faster communication for people with speech impairments.
+# Assistive Communication Device for Speech Impairments
+
+Using visual-based lip movement recognition, Llama 2 for text processing, OpenAI Whisper for speech synthesis, and AMD Ryzen AI hardware acceleration, this project implements a real-time assistive communication device that monitors lip movements to enable faster communication for people with speech impairments.
+
+## Features
+
+- **Real-time Lip Movement Detection**: Computer vision-based lip reading using facial landmarks
+- **Text Generation**: Llama 2 integration for intelligent text prediction and completion
+- **Speech Synthesis**: OpenAI Whisper for converting recognized text to speech
+- **Hardware Acceleration**: Optimized for AMD Ryzen AI PC for real-time performance
+- **User-friendly Interface**: Simple interface for easy communication
+
+## System Architecture
+
+1. **Lip Movement Recognition Module**: Captures video feed and detects lip movements using facial landmark detection
+2. **Text Processing Module**: Uses Llama 2 to interpret lip movements and generate coherent text
+3. **Speech Output Module**: Converts recognized text to natural speech using Whisper
+4. **AMD Ryzen AI Optimization**: Leverages hardware acceleration for real-time performance
+
+## Requirements
+
+- Python 3.8+
+- AMD Ryzen AI PC (recommended for optimal performance)
+- Webcam for video capture
+- See `requirements.txt` for Python dependencies
+
+## Installation
+
+```bash
+pip install -r requirements.txt
+```
+
+## Usage
+
+```bash
+python main.py
+```
+
+## Project Structure
+
+```
+.
+├── src/
+│   ├── lip_detection/      # Lip movement detection module
+│   ├── text_processing/    # Llama 2 text processing
+│   ├── speech_synthesis/   # Whisper speech output
+│   └── utils/              # Utility functions
+├── config/                 # Configuration files
+├── models/                 # Model files (downloaded at runtime)
+├── main.py                 # Main application entry point
+└── requirements.txt        # Python dependencies
+```
+
+## License
+
+MIT License
