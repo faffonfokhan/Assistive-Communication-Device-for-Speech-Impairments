@@ -43,7 +43,7 @@ python main.py
 ├── src/
 │   ├── lip_detection/      # Lip movement detection module
 │   ├── text_processing/    # Llama 2 text processing
-│   ├── speech_synthesis/   # Whisper speech output
+│   ├── speech_synthesis/   # TTS speech output (pyttsx3, gTTS)
 │   └── utils/              # Utility functions
 ├── config/                 # Configuration files
 ├── models/                 # Model files (downloaded at runtime)
