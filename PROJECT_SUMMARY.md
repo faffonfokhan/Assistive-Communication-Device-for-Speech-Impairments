@@ -14,7 +14,7 @@ This project implements a real-time assistive communication device that uses vis
 ✅ **Real-time visual-based recognition of lip movements**
 ✅ **Using Llama 2** for intelligent text processing
 ✅ **AMD Ryzen AI PC optimization** for hardware acceleration
-✅ **OpenAI Whisper technologies** for speech synthesis
+✅ **Speech synthesis technologies** (pyttsx3, gTTS) for audio output
 
 ## Project Statistics
 
@@ -262,7 +262,7 @@ MIT License - See LICENSE file for details
 - MediaPipe by Google for facial landmark detection
 - Meta AI for Llama 2 language model
 - AMD for Ryzen AI optimization support
-- OpenAI for Whisper technologies
+- pyttsx3 and gTTS projects for text-to-speech capabilities
 - HuggingFace for model hosting and transformers library
 
 ---

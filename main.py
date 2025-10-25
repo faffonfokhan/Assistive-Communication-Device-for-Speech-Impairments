@@ -5,7 +5,7 @@ Real-time lip movement recognition system for speech impairments
 This application integrates:
 - Visual lip movement detection using computer vision
 - Llama 2 for text processing and generation
-- OpenAI Whisper technologies for speech synthesis
+- Text-to-speech synthesis (pyttsx3, gTTS) for audio output
 - AMD Ryzen AI hardware acceleration
 """
 

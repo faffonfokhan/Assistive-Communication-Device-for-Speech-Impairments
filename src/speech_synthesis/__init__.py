@@ -1,6 +1,6 @@
 """
 Speech Synthesis Module
-Handles text-to-speech conversion using OpenAI Whisper and related technologies
+Handles text-to-speech conversion using pyttsx3 and gTTS
 """
 
 try:
